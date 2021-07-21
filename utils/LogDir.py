@@ -4,12 +4,13 @@
 import os
 from utils.Logger import log
 
+
 class LogDir(object):
     def __init__(self):
         self.initDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     def log_dir(self):
-        return os.path.join(self.initDir,'log')
+        return os.path.join(self.initDir, 'log')
 
     def log_path(self):
         logDir = self.log_dir()
